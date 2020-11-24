@@ -21,19 +21,12 @@ public class Triplete {
 
             if(A[i] >= dato1 && primerDato){
 
-                if(A[i] == dato1){
-                    igualesPrimerDato++;
-                }
+                if(A[i] == dato1){igualesPrimerDato++;}
 
-                if(A[i] > dato1){
-                    igualesPrimerDato = 0;
-                }
-
+                if(A[i] > dato1){igualesPrimerDato = 0;}
                 dato1 = A[i];
             }
-            if(!primerDato){
-                dato1 = A[i]; primerDato = true;
-            }
+            if(!primerDato){dato1 = A[i]; primerDato = true;}
         }
 
         System.out.println(" ");
@@ -45,8 +38,7 @@ public class Triplete {
 
         boolean primerDato = false;
 
-        if(igualesPrimerDato>0){
-            dato2 = dato1;
+        if(igualesPrimerDato>0){dato2 = dato1;
 
         }else{
 
@@ -54,20 +46,12 @@ public class Triplete {
 
                 if(A[i]<dato1 && A[i]>=dato2 && primerDato){
 
-                    if(A[i] == dato2){
-                        igualesSegundoDato++;
-                    }
+                    if(A[i] == dato2){igualesSegundoDato++;}
 
-                    if(A[i] > dato2){
-                        igualesSegundoDato = 0;
-                    }
-
+                    if(A[i] > dato2){igualesSegundoDato = 0;}
                     dato2 = A[i];
                 }
-
-                if(!primerDato && A[i]<dato1){
-                    dato2 = A[i];  primerDato = true;
-                }
+                if(!primerDato && A[i]<dato1){dato2 = A[i];  primerDato = true;}
             }
 
         }
@@ -83,20 +67,14 @@ public class Triplete {
         boolean primerDato = false;
 
         if(igualesPrimerDato>1 || igualesSegundoDato>0){
-
             if(igualesPrimerDato>1){dato3 = dato1;}else {dato3 = dato2;}
-
         }else{
-
             for (int i =0;i<= A.length-1;i++){
 
                 if(A[i]<dato1 && A[i]<dato2 && A[i] > dato3 && primerDato){
-
                     dato3 = A[i];
                 }
-
                 if(!primerDato && A[i]<dato2 && A[i] < dato2){
-
                     dato3 = A[i];  primerDato = true;
                 }
             }
@@ -105,8 +83,12 @@ public class Triplete {
 
         System.out.println(" ");
         System.out.println("Dato 3 = "+ dato3);
+    }
 
+    public void resultado(){
 
+        int multi = dato1*dato2*dato3;
+        System.out.println("El resultado total es = " + multi);
     }
 
 }
