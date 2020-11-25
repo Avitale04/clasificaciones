@@ -2,15 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int []A = {-5, 5, -5, 4};
+        int []A = {-3,1,2,-2,5,6};
 
-        Triplete triangulo = new Triplete(A);
+        Triple triangulo = new Triple(A);
 
-        triangulo.primerValor();
-        triangulo.segundoValor();
-        triangulo.tercerValor();
-        triangulo.resultado();
-
-
+        triangulo.PrimerosDos();
     }
 }
