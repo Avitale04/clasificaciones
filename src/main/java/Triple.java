@@ -43,13 +43,15 @@ public class Triple {
 
                 if(A[y]==dato1 && verificado1 && A[y] * resultado1 > resultado2 || A[y]==dato2
                     && verificado2 && A[y] * resultado1 > resultado2 || A[y] != dato1 && A[y] != dato2 && A[y] * resultado1 > resultado2){
+
                     dato3 = A[y];
-                    resultado2 = dato3 * resultado1;
+                    System.out.println(dato3);
+                    resultado2 = dato1 * dato2 * dato3;
                 }
         }
         System.out.println("El dato1 es = " +dato1);
         System.out.println("El dato2 es = " +dato2);
-        System.out.println("El dato3 final es = " +dato3);
+        System.out.println("El dato3 es = " +dato3);
         System.out.println("El segundo resultado final es = "+resultado2);
     }
 }

@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int []A = {-3,1,2,-2,5,6};
+        int []A = {5,8,6,9,4,2};
 
         Triple triangulo = new Triple(A);
 
